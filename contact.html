@@ -1,31 +1,105 @@
-<h2>Contact Us</h2>
 
-<form action="/register" method="get">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fashion Frame | Contact</title>
+</head>
+<body>
 
-    <label>Name:</label>
-    <input type="text" name="name" placeholder="Enter your name" required>
+    <header>
+        <p>The Fashion Frame</p>
+        <h1>Contact Us</h1>
+        <p>Get in touch with The Fashion Frame.</p>
 
-    <br><br>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="models.html">Models</a> |
+            <a href="rankings.html">Rankings</a> |
+            <a href="agencies.html">Agencies</a> |
+            <a href="editorials.html">Editorials</a> |
+            <a href="events.html">Events</a> |
+            <a href="profiles.html">Profiles</a> |
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
 
-    <label>Email:</label>
-    <input type="email" name="email" placeholder="Enter your email" required>
+    <main>
+        <section>
+            <h2>Send Us a Message</h2>
+            <p>
+                Have a question, suggestion or comment about our
+                fashion content? Complete the form below.
+            </p>
 
-    <br><br>
+            <form action="#" method="get">
+                <p>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
+                </p>
 
-    <label>Subject:</label>
-    <select name="subject">
-        <option value="general">General Inquiry</option>
-        <option value="models">Model Information</option>
-        <option value="events">Fashion Events</option>
-    </select>
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+                </p>
 
-    <br><br>
+                <p>
+                    <label for="topic">Subject:</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Choose a topic</option>
+                        <option value="models">Models</option>
+                        <option value="agencies">Agencies</option>
+                        <option value="editorials">Editorials</option>
+                        <option value="events">Fashion Events</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
 
-    <label>Message:</label>
-    <textarea name="message" placeholder="Write your message" required></textarea>
+                <p>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message"
+                              rows="6" cols="35"
+                              placeholder="Write your message here"
+                              required></textarea>
+                </p>
 
-    <br><br>
+                <input type="submit" value="Send Message">
+                <input type="reset" value="Clear Form">
+            </form>
+        </section>
 
-    <input type="submit" value="Send Message">
+        <section>
+            <h2>Explore Our Website</h2>
+            <ul>
+                <li><a href="models.html">Browse international models</a></li>
+                <li><a href="editorials.html">View fashion editorials</a></li>
+                <li><a href="events.html">Explore fashion events</a></li>
+                <li><a href="agencies.html">Discover modeling agencies</a></li>
+            </ul>
+        </section>
 
-</form>
+        <section>
+            <h2>Fashion Resources</h2>
+            <p>
+                Visit <a href="https://www.vogue.com/">Vogue</a>
+                to explore more fashion news, photography and stories.
+            </p>
+        </section>
+        <p>
+    Email us:
+    <a href="mailto:thefashionframe@example.com">
+        Send us an email
+    </a>
+</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Fashion Frame.</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
